@@ -1,0 +1,25 @@
+
+.cards {
+  /*display: flex;*/
+  position: relative;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+.card {
+  position: absolute;
+  background-color: gray;
+  height: 200px;
+  width: 120px;
+  border-radius: 1em;
+  border: 1px solid black;
+  transform-origin: center;
+}
+
+.card:hover {
+  transform: translate(-10px, -10px);
+}
+
+.focus {
+display: none;
+}
