@@ -1,0 +1,11 @@
+.nav{
+  margin: 20px auto;
+  width: 50%;
+  border: 3px solid  purple;
+  padding: 10px;
+text-align: center;
+}
+
+H1{
+  color: purple;
+}
