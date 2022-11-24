@@ -6,18 +6,24 @@ import { DeskBackGroundComponent } from './desk-back-ground/desk-back-ground.com
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardsComponent } from './cards/cards.component';
+import {MatButtonModule} from "@angular/material/button";
+import { RusultComponent } from './rusult/rusult.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     DeskBackGroundComponent,
-    CardsComponent
+    CardsComponent,
+    RusultComponent
   ],
-    imports: [
-        BrowserModule,
-        MatButtonToggleModule,
-        BrowserAnimationsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MatButtonToggleModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

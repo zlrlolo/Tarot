@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  count = 23;
+  count = 22;
   angle = 2 * Math.PI / this.count;
 
   cards = new Array(this.count);

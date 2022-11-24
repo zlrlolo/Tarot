@@ -1,0 +1,63 @@
+.cardRut {
+  /*background-color: gray;*/
+  background-image: url("../../assets/cardBack.png");
+  background-size: cover;
+  height: 220px;
+  width: 120px;
+  border-radius: 1em;
+  border: 1px solid black;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.a-final {
+  translate: 240px 200px;
+}
+
+.a-future {
+  translate: 140px 100px;
+
+}
+
+.now {
+  translate: 40px 0;
+}
+
+.b-future {
+  translate: 340px 100px;
+
+}
+
+.b-final {
+  translate: 440px 0;
+}
+
+button {
+  color: gray;
+  margin-left: 670px;
+  margin-top: 500px;
+}
+
+.cardRead {
+  height: 220px;
+  border-radius: 1em;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+
+.read {
+  line-height: 2em;
+  font-size: 1.5em;
+  background-color: pink;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+.cardID {
+  margin-top: 230px;
+  margin-left: 40px;
+  color: gray;
+  font-size: 1em;
+}

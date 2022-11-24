@@ -1,0 +1,29 @@
+<div class="cardArray">
+  <div class="cardRut a-final" [style.backgroundImage]="getBackground(0)">
+    <div *ngIf="back" class="cardID">{{getCardID(0)}}</div>
+  </div>
+  <div class="cardRut a-future" [style.backgroundImage]="getBackground(1)">
+    <div *ngIf="back" class="cardID">{{getCardID(1)}}</div>
+  </div>
+
+  <div class="cardRut now" [style.backgroundImage]="getBackground(2)">
+    <div *ngIf="back" class="cardID">{{getCardID(2)}}</div>
+  </div>
+
+  <div class="cardRut b-future" [style.backgroundImage]="getBackground(3)">
+    <div *ngIf="back" class="cardID">{{getCardID(3)}}</div>
+  </div>
+
+  <div class="cardRut b-final" [style.backgroundImage]="getBackground(4)">
+    <div *ngIf="back" class="cardID">{{getCardID(4)}}</div>
+  </div>
+
+</div>
+<div class="cardRead">
+  <div class="read">1</div>
+  <div class="read">1</div>
+  <div class="read">1</div>
+  <div class="read">1</div>
+  <div class="read">1</div>
+</div>
+<button mat-raised-button (click)="getRandom()">翻牌</button>

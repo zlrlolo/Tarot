@@ -3,9 +3,14 @@
   width: 5em;
   height: 5em;
   margin-right: 1em;
-
 }
-
+.navImg{
+  background-image: url("../../assets/magic.webp");
+  text-decoration: none;
+  height: 70px;
+  width: 60px;
+  background-size:cover;
+}
 .nav {
   display: flex;
   color:gray;
@@ -18,5 +23,5 @@
 
 .spans{
   margin-top: 5px;
-  margin-left: 2px;
+  margin-left: 8px;
 }
