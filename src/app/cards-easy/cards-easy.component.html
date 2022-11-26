@@ -1,0 +1,18 @@
+<div class="cards">
+  <div class="card-wrapper" *ngFor="let card of cards; let i=index" [style.translate]="getTranslate(i)"
+       [class.focus]="focused.includes(i)">
+    <div class="card " [style.rotate]="getRotate(i)" [class.focus]="focused.includes(i)"
+         (click)='click(i)'
+    ></div>
+  </div>
+</div>
+
+<span>请专心思索想要提问的内容，依次抽取三张牌</span>
+
+<div class="cardArray">
+  <div class="cardRut a-final" *ngIf="cot>0"></div>
+  <div class="cardRut now" *ngIf="cot>1"></div>
+  <div class="cardRut b-final" *ngIf="cot>2"></div>
+</div>
+
+<a mat-raised-button *ngIf="cot>2" [routerLink]="['/result-easy']" >抽卡完成>解读</a>

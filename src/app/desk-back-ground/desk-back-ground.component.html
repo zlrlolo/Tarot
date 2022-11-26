@@ -1,10 +1,13 @@
-<div class="nav" >
+<div class="nav">
   <a class=navImg routerLink="/">
   </a>
   <div class="spans">
+
     <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
-      <mat-button-toggle value="塔罗牌二选一" class="mat-mdc-button-touch-target">塔罗牌二选一</mat-button-toggle>
-      <mat-button-toggle value="简单运势">简单运势</mat-button-toggle>
+      <mat-button-toggle [routerLink]="['/']" class="mat-mdc-button-touch-target">塔罗二选一
+      </mat-button-toggle>
+      <mat-button-toggle [routerLink]="['/card-easy']" class="mat-mdc-button-touch-target">圣三角
+      </mat-button-toggle>
     </mat-button-toggle-group>
     <div class="spans">tarot.lolo.moe</div>
   </div>

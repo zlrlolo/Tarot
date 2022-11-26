@@ -1,0 +1,24 @@
+<div class="cardArray">
+  <div class="cardRut a-final" [style.backgroundImage]="getBackground(0)">
+    <div *ngIf="back" class="cardID">{{getCardID(0)}}</div>
+  </div>
+
+  <div class="cardRut now" [style.backgroundImage]="getBackground(1)">
+    <div *ngIf="back" class="cardID">{{getCardID(1)}}</div>
+  </div>
+
+  <div class="cardRut b-final" [style.backgroundImage]="getBackground(2)">
+    <div *ngIf="back" class="cardID">{{getCardID(2)}}</div>
+  </div>
+
+
+</div>
+<div class="cardRead">
+  <mat-card class="read" >过去：
+    <div *ngIf="back" style="display: inline">{{getCardID(0)}}</div>
+    <mat-card-content class="description"  *ngIf="back">111111</mat-card-content>
+  </mat-card>
+  <div class="read">现在：</div>
+  <div class="read">未来：</div>
+</div>
+<button mat-raised-button (click)="getRandom()" >翻牌</button>

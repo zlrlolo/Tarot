@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  selector: 'app-cards-easy',
+  templateUrl: './cards-easy.component.html',
+  styleUrls: ['./cards-easy.component.css']
 })
-export class CardsComponent implements OnInit {
+export class CardsEasyComponent implements OnInit {
 
   count = 22;
   angle = 2 * Math.PI / this.count;
@@ -32,23 +32,7 @@ export class CardsComponent implements OnInit {
     const x = Math.cos(angle) * 200;
     const y = Math.sin(angle) * 200;
     // console.log(result);
-    if(this.focused[0]==i){
-      return `600px 200px!important`;
-    }
-    if(this.focused[1]==i){
-      return `500px 100px!important`;
-    }
-    if(this.focused[2]==i){
-      return `700px 100px!important`;
-    }
-    if(this.focused[3]==i){
-      return `400px -100px!important`;
-    }
-    if(this.focused[4]==i){
-      return `800px -100px!important`;
-    }
-    else {
-    return `${x}px ${y}px`;}
+    return `${x}px ${y}px`;
   }
 
 
@@ -58,10 +42,9 @@ export class CardsComponent implements OnInit {
 
   click(i: number) {
     this.cot++;
-    if (this.cot <= 5) {
+    if (this.cot <= 3) {
       this.focused.push(i);
     }
-
     // let focus = i;
 
   }
