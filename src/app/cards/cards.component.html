@@ -1,6 +1,6 @@
 <div class="cards">
-  <div class="card-wrapper" *ngFor="let card of cards; let i=index" [style.translate]="getTranslate(i)"
-       [class.focus]="focused.includes(i)">
+  <div class="card-wrapper" *ngFor="let card of cards; let i=index" [style.translate]="getTranslate(i)" [style.z-index]="getZindex(i)"
+       [class.focus]="focused.includes(i)" >
     <div class="card" [style.rotate]="getRotate(i)" [class.focus]="focused.includes(i)"
          (click)='click(i)'
     ></div>
