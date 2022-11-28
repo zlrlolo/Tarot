@@ -12,31 +12,9 @@ export class RusultComponent implements OnInit {
   panelOpenState = false;
   random: number[] = [];
   back = false;
-  Tarot: string[] = [
-    "愚者",
-    "魔术师",
-    "女祭司",
-    "女皇",
-    "皇帝",
-    "教皇",
-    "恋人",
-    "战车",
-    "力量",
-    "隐者",
-    "命运之轮",
-    "正义",
-    "倒吊者",
-    "死神",
-    "节制",
-    "恶魔",
-    "塔",
-    "星星",
-    "月亮",
-    "太阳",
-    "审判",
-    "世界",
-  ]
-  // private reset: string='';
+  count = 21;
+  cot = 5;
+
 
   constructor(
     private route: ActivatedRoute,
@@ -51,16 +29,15 @@ export class RusultComponent implements OnInit {
   }
 
   getRandom() {
-    const count = 21;
-    const cot = 5;
-    for (let i = 0; i <= cot; i++) {
-      let r = Math.floor(Math.random() * count);
-      if (this.random.indexOf(r)) {
+    for (let i = 0; i < this.cot;) {
+      let r = Math.floor(Math.random() * this.count);
+      if (!(this.random.includes(r))) {
         this.random.push(r)
+        i++;
       }
+      this.back = true;
+      console.log(this.random)
     }
-    this.back = true;
-    console.log(this.random)
   }
 
   getBackground(i: number) {
@@ -75,7 +52,7 @@ export class RusultComponent implements OnInit {
     return data.tarotID[this.random[i]]
   }
 
-  getCardDecoration(i:number){
+  getCardDecoration(i: number) {
     return data.tarotDecoration[this.random[i]]
   }
 

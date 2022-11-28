@@ -2,13 +2,16 @@
   /*background-color: gray;*/
   background-image: url("../../assets/cardBack.png");
   background-size: cover;
-  height: 220px;
-  width: 120px;
+  height: 224px;
+  width: 128px;
   border-radius: 1em;
-  border: 1px solid black;
   position: absolute;
   top: 200px;
   left: 100px;
+  transition-duration: 1.8s;
+  transition-property: background-image;
+  border:5px solid floralwhite;
+  box-shadow:0 2px 27px 6px rgba(0, 0, 0, .12);
 }
 
 .a-final {
@@ -57,8 +60,17 @@ button {
   margin-top: 230px;
   text-align: center;
   color: gray;
-  font-size: 0.8em;
+  font-size: 0.5em;
+  opacity:1;
+  /*transition-duration: 1.8s;*/
+  animation:display 2s ease-in forwards;
 }
+@keyframes display{ /*设置内容由显示变为隐藏*/
+  0%{opacity: 0;}
+  50%{opacity: 0.5;}
+  100%{opacity: 1;}
+}
+
 .description{
   color: gray;
 }

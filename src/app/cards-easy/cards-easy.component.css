@@ -6,14 +6,18 @@
   margin-top: 200px;
 }
 
+.card-wrapper {
+  position: absolute;
+}
+
 .card {
   background-image: url("../../assets/cardBack.png");
   background-size: cover;
-  height: 220px;
-  width: 120px;
+  height: 240px;
+  width: 130px;
   border-radius: 1em;
-  position: absolute;
-  border: 1px solid black;
+  border:5px solid floralwhite;
+  box-shadow: 1px 1px 8px 1px rgba(0,0,0,.2);
   transform-origin: center;
 }
 
@@ -22,51 +26,64 @@
 }
 
 .focus {
-  display: none;
+  /*translate: none!important;*/
+  /*rotate:-0deg!important;*/
+  transition-duration: 1.8s;
+  transition-property: translate,rotate;
+  /*z-index: 2 !important;*/
 }
 
-.cardArray{
-  position: relative;
+
+
+.cardArray {
+  position: absolute;
 }
-.cardRut{
+
+.cardRut {
   /*background-color: gray;*/
   background-image: url("../../assets/cardBack.png");
-  background-size: cover;
-  height: 220px;
-  width: 120px;
+  background-size: contain;
+  height: 224px;
+  width: 128px;
   border-radius: 1em;
-  border: 1px solid black;
+  border: 5px solid black;
   position: absolute;
-  top:-100px;
-  left:700px;
+  top: -100px;
+  left: 700px;
 }
-.a-final{
+
+.a-final {
   translate: 200px 200px;
 }
-.a-future{
+
+.a-future {
   translate: 100px 100px;
 
 }
-.now{
+
+.now {
 
 }
-.b-future{
+
+.b-future {
   translate: 300px 100px;
 
 }
-.b-final{
+
+.b-final {
   translate: 400px 0;
 }
 
-a{
+a {
   color: gray;
-  margin-left: 50%;
+  margin-left: 38%;
   margin-top: 400px;
 }
-span{
+
+span {
   color: gray;
   position: absolute;
-  top:150px;
-  left:700px;
+  top: 150px;
+  left: 700px;
   font-size: 1.5em;
 }
