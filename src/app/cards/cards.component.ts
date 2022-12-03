@@ -90,6 +90,31 @@ export class CardsComponent implements OnInit {
       return''
     }
   }
+
+  getchanges(i: number) {
+    const angle = this.angle * i;
+    const x = Math.cos(angle) * 200;
+    const y = Math.sin(angle) * 200;
+    // console.log(result);
+    if (this.focused[0] == i) {
+      return `translate(600px 200px)`;
+    }
+    if (this.focused[1] == i) {
+      return `translate(500px 100px)`;
+    }
+    if (this.focused[2] == i) {
+      return `translate(700px 100px)`;
+    }
+    if (this.focused[3] == i) {
+      return `translate(400px -100px)`;
+    }
+    if (this.focused[4] == i) {
+      return `translate(800px -100px)`;
+    } else {
+      return `translate(${x}px ${y}px)`;
+    }
+  }
+
 }
 
 
